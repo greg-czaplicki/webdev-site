@@ -1,24 +1,36 @@
 .hero {
   position: relative;
-  height: 600px;
+  height: 37.5rem;
   overflow: hidden;
+
+  &__img {
+    width: 100%;
+    top: 2%;
+    transform: translateY(-2%);
+  }
 
   &__text {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 19%;
+    transform: translateY(-25%);
     left: 0;
     width: 100%;
-    text-align: center;
+    text-align: right;
   }
 
   &__title {
     font-size: 4.7rem;
-    font-weight: 200;
+    font-weight: 300;
+    margin: 0;
+    padding-right: 2.5rem;
   }
 
-  &__subtitle {
-    font-size: 2.8rem;
-    font-weight: 200;
+  &__description {
+    font-size: 1.65rem;
+    font-weight: 300;
+    padding-right: 2.5rem;
+    max-width: 37.5rem;
+    float: right;
+    padding-top: 0.625rem;
   }
 }
