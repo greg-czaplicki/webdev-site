@@ -1,0 +1,11 @@
+.btn {
+  background-color: #d5c4b2;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.1rem;
+  display: inline-block;
+
+  &--blue {
+    background-color: #00c3d9;
+  }
+}
