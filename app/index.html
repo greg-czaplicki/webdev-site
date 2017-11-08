@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./temp/styles/styles.css">
@@ -16,10 +16,17 @@
     </header>
 
     <div class="hero">
-        <img class="hero__img" src="./assets/images/tropical.jpeg" alt="tropical island">
-        <div class="hero__text">
-            <h1 class="hero__title">Explore Your World.</h1>
-            <p class="hero__description">Start your adventure by getting inspired from thousands of destinations!</p>
+        <picture>
+            <source srcset="./assets/images/tropical.jpg" media="(min-width: 1400px)">
+            <source srcset="./assets/images/tropical-med.jpg" media="(min-width: 660px)">
+            <img src="./assets/images/tropical-small.jpg" alt="tropical island">
+        </picture>
+
+        <div class="wrapper">
+            <div class="hero__text">
+                <h1 class="hero__title">Explore Your World.</h1>
+                <p class="hero__description">Start your adventure by getting inspired from thousands of destinations!</p>
+            </div>
         </div>
     </div>
 

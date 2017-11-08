@@ -3,12 +3,6 @@
   height: 37.5rem;
   overflow: hidden;
 
-  &__img {
-    width: 100%;
-    top: 2%;
-    transform: translateY(-2%);
-  }
-
   &__text {
     position: absolute;
     top: 19%;
@@ -19,18 +13,46 @@
   }
 
   &__title {
-    font-size: 4.7rem;
+    font-size: 2.2rem;
     font-weight: 300;
     margin: 0;
-    padding-right: 2.5rem;
+    padding-right: 1rem;
+
+    @mixin atSmall {
+      font-size: 3rem;
+      padding-right: 1rem;
+    }
+
+    @mixin atMedium {
+      font-size: 3.3rem;
+      padding-right: 0.7em;
+    }
+
+    @mixin atLarge {
+      font-size: 4.7rem;
+    }
   }
 
   &__description {
-    font-size: 1.65rem;
+    font-size: 1rem;
     font-weight: 300;
-    padding-right: 2.5rem;
-    max-width: 37.5rem;
+    padding-right: 0.8rem;
     float: right;
-    padding-top: 0.625rem;
+    width: 350px;
+
+    @mixin atSmall {
+      font-size: 1.175rem;
+      width: 400px;
+    }
+
+    @mixin atMedium {
+      font-size: 1.3rem;
+      width: 450px;
+    }
+
+    @mixin atLarge {
+      font-size: 1.65rem;
+      width: 600px;
+    }
   }
 }
